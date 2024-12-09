@@ -7,6 +7,7 @@ import Home from './includes/Home';
 function App() {
   return (
     <div className="App">
+      <h1>Prajka Added heading...</h1>
       <BrowserRouter>
       <Routes>
         {/* <Route path='/' element={<Navigate to={'/home'}/>}></Route> */}
