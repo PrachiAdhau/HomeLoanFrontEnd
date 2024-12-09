@@ -7,14 +7,22 @@ import Home from './includes/Home';
 function App() {
   return (
     <div className="App">
+
       <h1>Prajka Added heading...</h1>
+
+      <h1>priyanka</h1>
+
+      <h1>vaishnavi</h1>
+
+
       <BrowserRouter>
       <Routes>
         {/* <Route path='/' element={<Navigate to={'/home'}/>}></Route> */}
         <Route  path='*' element={<Home/>}></Route>
       </Routes>
       </BrowserRouter>
-     
+     <h1>Sneha</h1>
+     <h1>Heading2 by nisha</h1>
     </div>
     
   );
