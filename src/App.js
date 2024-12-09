@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
 
+      <h1>vaishnavi</h1>
+
       <BrowserRouter>
       <Routes>
         {/* <Route path='/' element={<Navigate to={'/home'}/>}></Route> */}
