@@ -9,13 +9,14 @@ function App() {
     <div className="App">
 
       <h1>vaishnavi</h1>
+
       <BrowserRouter>
       <Routes>
         {/* <Route path='/' element={<Navigate to={'/home'}/>}></Route> */}
         <Route  path='*' element={<Home/>}></Route>
       </Routes>
       </BrowserRouter>
-     
+     <h1>Sneha</h1>
     </div>
     
   );
