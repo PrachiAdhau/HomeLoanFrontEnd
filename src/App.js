@@ -17,6 +17,7 @@ function App() {
       </Routes>
       </BrowserRouter>
      <h1>Sneha</h1>
+     <h1>Heading2 by nisha</h1>
     </div>
     
   );
