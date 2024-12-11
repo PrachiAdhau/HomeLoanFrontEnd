@@ -8,8 +8,13 @@ import Contact from '../templates/Contact'
 import EMICalculator from '../templates/EMICalculator'
 import Signin from '../templates/Signin'
 import '../style/Common.css';
+
  import Footer from './Footer'
 import Slider from './Slider'
+
+import Footer from './Footer'
+import Slider from '../includes/Slider';
+
 
 function Home() {
   return (
@@ -23,11 +28,16 @@ function Home() {
         <Route path='contactus' element={<Contact/>}></Route>
         <Route path='/emi' element={<EMICalculator/>}></Route>
         <Route path='signin' element={<Signin/>}></Route>
-    
+        <Route path='Contact' element={<Contact/>}></Route>
     </Routes>
+
 </div>             
 
 <Footer />
+   
+</div>
+
+{/* <Footer/> */}
 
     </div>
   )
