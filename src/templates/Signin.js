@@ -8,9 +8,9 @@ function Signin() {
 
   const { register, handleSubmit } = useForm();
   const navigate=useNavigate();
-  let baseUrl='http://localhost:9095/employee_details/employee/'
+  let baseUrl='http://localhost:8989/emp/getEmployeee/eusername/epassword'
   const onLogin = auth => {
-        axios.get(baseUrl+auth.username+'/'+auth.password)
+        axios.get(baseUrl+auth.eusername+'/'+auth.epassword)
         .then(res=>{
           if(res.status===200)
           {
@@ -52,14 +52,14 @@ function Signin() {
                   <div data-mdb-input-init className="form-outline mb-4">
                     <input type="text" id="form2Example1" className="form-control"
                       {...register('username')} />
-                    <label className="form-label" forId="form2Example1">Username</label>
+                    <label className="form-label" forId="form2Example1">eUsername</label>
                   </div>
 
 
                   <div data-mdb-input-init className="form-outline mb-4">
                     <input type="password" id="form2Example2" className="form-control"
                       {...register('password')} />
-                    <label className="form-label" forId="form2Example2">Password</label>
+                    <label className="form-label" forId="form2Example2">ePassword</label>
                   </div>
 
 
@@ -79,7 +79,7 @@ function Signin() {
                   </div>
 
 
-                  <button type="submit" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary btn-block mb-4">Sign in</button>
+                  <button type="submit" data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-primary btn-block mb-4">Sign in</button>
 
                 </form>
 
