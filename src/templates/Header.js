@@ -12,7 +12,7 @@ function Header() {
         <Link className='header-btn me-5' to={'/enquiry'}>Enquiry</Link>
         <Link className='header-btn me-5' to={'/aboutus'}>About</Link>
         <Link className='header-btn me-5' to={'/signin'}>Signin</Link>
-       
+       <Link className='header-btn me-5' to={'/Contact'}>Contact Us</Link>
         
     </div>
 
