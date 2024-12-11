@@ -1,19 +1,27 @@
-import React from 'react'
+import React from "react";
+import '../style/footer.css';
+function Footer()
+{
+    return(
+        <div className="footer">
+            <div className="section">
+                <h3>Our Address</h3>
+                <p>123 Main st.cityville,state,cali blue building,<br/>1111 7th floor cali blue building</p>
+            </div>
+            
+            <div className="section">
+            <h3>Contact Us</h3> 
+            <p>Email: info@example.com</p> 
+            <p>Phone: 9587554786</p>
+            </div>
 
-function Footer() {
-  return (
-    <div>
-    <Footer className="container">
-      <Footer.Copyright href="#" by="DreamHome™" year={2022} />
-      <Footer.LinkGroup>
-        <Footer.Link href="#">About</Footer.Link>
-        <Footer.Link href="#">Privacy Policy</Footer.Link>
-        <Footer.Link href="#">Term &Condition</Footer.Link>
-        <Footer.Link href="#">Contact</Footer.Link>
-      </Footer.LinkGroup>
-    </Footer>
-    </div>
-  )
+            <div className="section">
+            <h3>Other Information</h3> 
+            <p>Twitter: @cityville</p> 
+            <p>Instagram: @cityville11</p>
+            </div>
+
+        </div>
+    );
 }
-
 export default Footer;
