@@ -23,7 +23,7 @@ function Home() {
         <Route path='contactus' element={<Contact/>}></Route>
         <Route path='emicalculator' element={<EMICalculator/>}></Route>
         <Route path='signin' element={<Signin/>}></Route>
-    
+        <Route path='Contact' element={<Contact/>}></Route>
     </Routes>
 
     
