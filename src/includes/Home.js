@@ -8,30 +8,35 @@ import Contact from '../templates/Contact'
 import EMICalculator from '../templates/EMICalculator'
 import Signin from '../templates/Signin'
 import '../style/Common.css';
-import Footer from './Footer'
-import Slider from '../includes/Slider';
+
+ import Footer from './Footer'
+import Slider from './Slider'
+
+
 
 function Home() {
   return (
     <div>
-<Header/>
 <div className='templates'>
-    <Routes>
-        {/* <Route path='/' element={<Navigate to={'aboutus'}/>}></Route> */}
+<Slider/>
+    <Routes> 
+         {/* <Route path='/' element={<Navigate to={'aboutus'}/>}></Route> */}
         <Route path='/aboutus' element={<AboutUs/>}></Route>
         <Route path='/enquiry' element={<Enquiry/>}></Route>
         <Route path='contactus' element={<Contact/>}></Route>
-        <Route path='emicalculator' element={<EMICalculator/>}></Route>
+        <Route path='/emi' element={<EMICalculator/>}></Route>
         <Route path='signin' element={<Signin/>}></Route>
         <Route path='Contact' element={<Contact/>}></Route>
     </Routes>
 
-    
-    
+</div>             
+
+<Footer />
+   
 </div>
 
-{/* <Footer/> */}
-    </div>
+
+  
   )
 }
 

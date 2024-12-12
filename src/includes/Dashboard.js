@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 
 import { Route, Routes } from 'react-router-dom';
 import SideNav from './SideNav';
-import ViewEmployee from '../employee/ViewEmployee';
-import AddEmployee from '../employee/AddEmployee';
+import ViewEmployee from '../modules/employee/ViewEmployee';
+import AddEmployee from '../modules/employee/AddEmployee';
 
 function Dashboard() {
     let userJson = localStorage.getItem('user');
@@ -28,7 +28,8 @@ function Dashboard() {
                 }
                 </Routes>
 
-             </div>
+
+        </div>
         </div>
      
     </div>

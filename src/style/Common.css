@@ -42,12 +42,12 @@
     padding-top: 5px;
     
 }
-.templates{
-    background-image: url('../../public//assets/third.jpg');
+/* .templates{
+     background-image: url('../../public//assets/third.jpg'); 
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .profile-image{
     border-radius: 180px;

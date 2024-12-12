@@ -11,13 +11,16 @@ function Header() {
       </img>
     <div className='w-40 ml-auto'>
 
-        <Link className='navlink' to={'/'}>Home</Link> 
-        <Link className='navlink' to={'/emicalculator'}>EmiCalculator</Link> 
-        <Link className='navlink' to={'/enquiry'}>Enquiry</Link>
-        <Link className='navlink' to={'/aboutus'}>About</Link>
-        <Link className='navlink' to={'/signin'}>Signin</Link>
-       <Link className='navlink' to={'/Contact'}>Contact Us</Link>
+        <Link className='navlink'to={'/home'}>Home</Link> 
+
         
+
+        <Link className='navlink'to={'/emicalculator'}>EmiCalculator</Link> 
+        <Link className='navlink'to={'/enquiry'}>Enquiry</Link>
+        <Link className='navlink'to={'/aboutus'}>About</Link>
+        <Link className='navlink'to={'/signin'}>Signin</Link>
+       <Link className='navlink'to={'/Contact'}>Contact Us</Link>
+
     </div>
 
     </nav>
