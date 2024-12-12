@@ -27,7 +27,8 @@ function Dashboard() {
                 }
                 </Routes>
 
-             </div>
+
+        </div>
         </div>
      
     </div>

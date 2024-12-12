@@ -12,8 +12,6 @@ import '../style/Common.css';
  import Footer from './Footer'
 import Slider from './Slider'
 
-import Footer from './Footer'
-import Slider from '../includes/Slider';
 
 
 function Home() {
@@ -37,9 +35,8 @@ function Home() {
    
 </div>
 
-{/* <Footer/> */}
 
-    </div>
+  
   )
 }
 

@@ -74,22 +74,22 @@ function Enquiry() {
       
          <div>
         <label className='form-label' hidden>Enter  CibilID</label>
-        <input type='number' value={0} hidden  {...register('cibilScore.cibilId')} className='form-control border border-dark'></input>
+        <input type='number'  hidden  {...register('cibilScore.cibilId')} className='form-control border border-dark'></input>
         </div>
          
         <div>
         <label className='form-label'hidden>Enter  cibilScore</label>
-        <input type='text'value={0} hidden {...register('cibilScore.cibilScore')} className='form-control border border-dark'></input>
+        <input type='text' hidden {...register('cibilScore.cibilScore')} className='form-control border border-dark'></input>
         </div>
 
         <div>
         <label className='form-label' hidden >Enter  cibil status</label>
-        <input type='text' value={'Pending'} hidden {...register('cibilScore.status')} className='form-control border border-dark'></input>
+        <input type='text' hidden {...register('cibilScore.status')} className='form-control border border-dark'></input>
         </div>
 
         <div>
         <label className='form-label' hidden>Enter cibilScoreDateandTime</label>
-        <input type='text' value={0} hidden {...register('cibilScore.cibilScoreDateandTime')} className='form-control border border-dark'></input>
+        <input type='text'  hidden {...register('cibilScore.cibilScoreDateandTime')} className='form-control border border-dark'></input>
         </div> 
 
         
