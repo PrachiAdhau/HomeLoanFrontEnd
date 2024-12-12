@@ -8,16 +8,20 @@ function Signin() {
 
   const { register, handleSubmit } = useForm();
   const navigate=useNavigate();
-  let baseUrl='http://localhost:8989/emp/getEmployeee/eusername/epassword'
+
+
+  let baseUrl='http://localhost:8989/emp/getEmployeee/'
+
   const onLogin = auth => {
         axios.get(baseUrl+auth.eusername+'/'+auth.epassword)
         .then(res=>{
+          console.log(res)
           if(res.status===200)
           {
               let userJson=JSON.stringify(res.data);
                 localStorage.setItem('user',userJson);   
 
-              navigate('/drive-safe')
+              navigate('/dashboard')
           }
         
         }
@@ -51,15 +55,21 @@ function Signin() {
 
                   <div data-mdb-input-init className="form-outline mb-4">
                     <input type="text" id="form2Example1" className="form-control"
-                      {...register('username')} />
-                    <label className="form-label" forId="form2Example1">eUsername</label>
+
+
+                      {...register('eusername')} />
+                    <label className="form-label" forid="form2Example1">Username</label>
+
                   </div>
 
 
                   <div data-mdb-input-init className="form-outline mb-4">
                     <input type="password" id="form2Example2" className="form-control"
-                      {...register('password')} />
-                    <label className="form-label" forId="form2Example2">ePassword</label>
+
+
+                      {...register('epassword')} />
+                    <label className="form-label" forid="form2Example2">Password</label>
+
                   </div>
 
 
@@ -67,8 +77,8 @@ function Signin() {
                     <div className="col d-flex justify-content-center">
 
                       <div className="form-check">
-                        <input className="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                        <label className="form-check-label" forId="form2Example31"> Remember me </label>
+                        <input className="form-check-input" type="checkbox" value="" id="form2Example31" defaultChecked />
+                        <label className="form-check-label" forid="form2Example31"> Remember me </label>
                       </div>
                     </div>
 
