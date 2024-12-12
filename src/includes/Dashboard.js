@@ -17,8 +17,7 @@ function Dashboard() {
         }
   return (
     <div>
-        
-        <div className='row w-100 mt-2 m-0'> 
+ <div className='row w-100 mt-2 m-0'> 
              <div className='col col-3 bg-primary'> 
                 <SideNav/>
              </div>
