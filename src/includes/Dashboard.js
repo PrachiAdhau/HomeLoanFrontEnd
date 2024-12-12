@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import AddEmployee from '../modules/employee/AddEmployee';
-import ViewEmployee from '../modules/employee/ViewEmployee';
+
+
 import { Route, Routes } from 'react-router-dom';
 import SideNav from './SideNav';
+import ViewEmployee from '../employee/ViewEmployee';
+import AddEmployee from '../employee/AddEmployee';
 
 function Dashboard() {
     let userJson = localStorage.getItem('user');
