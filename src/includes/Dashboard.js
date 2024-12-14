@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import AddEmployee from '../modules/employee/AddEmployee';
-import ViewEmployee from '../modules/employee/ViewEmployee';
+
+
 import { Route, Routes } from 'react-router-dom';
 import SideNav from './SideNav';
+
 import ViewApprovedenq from '../modules/RM/ViewApprovedenq';
 import RejectedEnquiry from '../modules/RM/RejectedEnquiry';
 import PendingEnquiry from '../modules/RM/PendingEnquiry';
 import AddEnquiry from '../modules/RM/AddEnquiry';
+
+import ViewEmployee from '../modules/employee/ViewEmployee';
+import AddEmployee from '../modules/employee/AddEmployee';
 
 function Dashboard() {
    let userJson = localStorage.getItem('user');
@@ -29,8 +33,7 @@ function Dashboard() {
         }
   return (
     <div>
-        
-        <div className='row w-100 mt-2 m-0'> 
+ <div className='row w-100 mt-2 m-0'> 
              <div className='col col-3 bg-primary'> 
                 <SideNav/>
              </div>
