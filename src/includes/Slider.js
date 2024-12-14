@@ -15,7 +15,7 @@ function Slider() {
       </div>
       <div className="carousel-item">
         <img src="https://homeloans.sbi/images/1_new.png" className="d-block w-100" alt="..."/>
-
+    </div>
     <div>
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
@@ -58,6 +58,7 @@ function Slider() {
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
+  </div>
   </div>
   );
 }

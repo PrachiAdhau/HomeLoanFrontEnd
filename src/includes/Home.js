@@ -9,9 +9,7 @@ import EMICalculator from '../templates/EMICalculator'
 import Signin from '../templates/Signin'
 import '../style/Common.css';
 import Footer from './Footer'
-import Slider from './Slider'
 import Slider from '../includes/Slider';
-
 
 function Home() {
   return (
@@ -34,9 +32,8 @@ function Home() {
    
 </div>
 
-{/* <Footer/> */}
 
-    </div>
+  
   )
 }
 

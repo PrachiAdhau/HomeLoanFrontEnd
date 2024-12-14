@@ -12,7 +12,13 @@ function SideNav() {
                 {lable :'Add Employee', to:'add-employee'},
                 {lable :'View Employies', to:'view-employies'}
                 
-              ]   
+              ]  ,
+              RM:[
+                {lable :'View approved', to:'view-approved'},
+                // {lable :'rejected enquiry', to:'rejected-enquiry'},
+                // {lable :'pending enquiry', to:'pending-enquiry'},
+                // {lable :'add enquiry', to:'add-enquiry'}
+              ]  
     }
   
     return (
