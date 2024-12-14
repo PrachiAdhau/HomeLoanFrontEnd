@@ -9,10 +9,16 @@ function SideNav() {
     let options={
        
         OM:[
-                {lable :'Add Employee', to:'add-employee'},
-                {lable :'View Employies', to:'view-employies'}
+                {lable :'Add Employee', to:'/dashboard/add-employee'},
+                {lable :'View Employies', to:'/dashboard/view-employies'}
                 
-              ]   
+              ]   ,
+              RM:[
+                {lable :'View approved', to:'/dashboard/view-approved'},
+                {lable :'rejected enquiry', to:'/dashboard/rejected-enquiry'},
+                {lable :'pending enquiry', to:'/dashboard/pending-enquiry'},
+                {lable :'add enquiry', to:'/dashboard/add-enquiry'}
+              ]
     }
   
     return (

@@ -11,9 +11,8 @@ function Header() {
       </img>
     <div className='w-40 ml-auto'>
 
-        <Link className='navlink'to={'/home'}>Home</Link> 
 
-        
+        <Link className='navlink' to={'/home'}>Home</Link> 
 
         <Link className='navlink'to={'/emicalculator'}>EmiCalculator</Link> 
         <Link className='navlink'to={'/enquiry'}>Enquiry</Link>
