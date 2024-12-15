@@ -1,16 +1,27 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
+import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 function ViewApprovedenq() {
     
   const [Enquiry,setEnquiry]=useState([]);
 
      const getDataByStatus=()=>{
-        axios.get('http://localhost:9091/enquiry/getByCibilStatus/Excellent')
+        axios.get('http://localhost:9091/enquiry/getByCibilStatus/Average')
         
          .then((res)=>setEnquiry(res.data))
       }
       useEffect(getDataByStatus,[])
+
+      function deleteEnquiry (applicant_Id){
+          axios.delete(`http://localhost:9091/enquiry/del/${applicant_Id}`)
+          .then(res=>{
+            window.location.reload();
+          })
+        .catch(error=>console.log(error))
+
+      }
 
   return (
     // <div>ViewApprovedenq</div>
@@ -34,6 +45,8 @@ function ViewApprovedenq() {
           <td>CibilStatus</td>
           <td>CibilscoreDateandTime</td>
           <td>remark</td>
+          <td>Delete</td>
+          <td>Edit</td>
           </tr>
         </thead>
          <tbody>
@@ -54,9 +67,17 @@ function ViewApprovedenq() {
               <td>{Enquiry.cibilScore.cibilScore}</td>
               <td>{Enquiry.cibilScore.status}</td>
               <td>{Enquiry.cibilScore.cibilScoreDateandTime}</td>
-              <td>{Enquiry.cibilScore.remark}</td>      
+              <td>{Enquiry.cibilScore.remark}</td>
+              <td>
+                   <button className='btn btn-outline-danger me-4' onClick={()=>deleteEnquiry(Enquiry.applicant_Id)}><i class="bi bi-trash3"></i></button>
+              </td>
+
+           <td>
+           <Link className='btn btn-outline-primary' to={`/edit/${Enquiry.applicant_Id}`}><i class="bi bi-pencil-square"></i></Link>
+            
+            </td>      
             </tr>)
-          }
+         }
         </tbody> 
       </table>
     </div>

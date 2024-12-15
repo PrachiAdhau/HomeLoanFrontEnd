@@ -11,6 +11,7 @@ import AddEnquiry from '../modules/RM/AddEnquiry';
 
 import ViewEmployee from '../modules/employee/ViewEmployee';
 import AddEmployee from '../modules/employee/AddEmployee';
+import EditEnquiry from '../modules/RM/EditEnquiry';
 
 function Dashboard() {
    let userJson = localStorage.getItem('user');
@@ -28,7 +29,8 @@ function Dashboard() {
               {path:'/view-approved',component:<ViewApprovedenq/>},
               {path:'/rejected-enquiry',component:<RejectedEnquiry/>},
               {path:'/pending-enquiry',component:<PendingEnquiry/>},
-              {path:'/add-enquiry',component:<AddEnquiry/>}
+              {path:'/add-enquiry',component:<AddEnquiry/>},
+              
       ]
         }
   return (

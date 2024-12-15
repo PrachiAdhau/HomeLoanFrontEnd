@@ -17,7 +17,8 @@ function SideNav() {
                 {lable :'View approved', to:'/dashboard/view-approved'},
                 {lable :'rejected enquiry', to:'/dashboard/rejected-enquiry'},
                 {lable :'pending enquiry', to:'/dashboard/pending-enquiry'},
-                {lable :'add enquiry', to:'/dashboard/add-enquiry'}
+                {lable :'Add enquiry', to:'/dashboard/add-enquiry'},
+                
               ]
     }
   
