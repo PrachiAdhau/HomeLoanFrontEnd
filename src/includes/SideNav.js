@@ -8,7 +8,7 @@ function SideNav() {
   
     let options={
        
-        OM:[
+        ADMIN:[
                 {lable :'Add Employee', to:'/dashboard/add-employee'},
                 {lable :'View Employies', to:'/dashboard/view-employies'}
                 
@@ -17,9 +17,19 @@ function SideNav() {
                 {lable :'View approved', to:'/dashboard/view-approved'},
                 {lable :'rejected enquiry', to:'/dashboard/rejected-enquiry'},
                 {lable :'pending enquiry', to:'/dashboard/pending-enquiry'},
-                {lable :'Add enquiry', to:'/dashboard/add-enquiry'},
-                
-              ]
+
+                {lable :'add enquiry', to:'/dashboard/add-enquiry'}
+              ],
+            OM:[
+               // {lable :'View-CustomerAddress', to:'/dashboard/view-CustomerAddress'},
+                {lable :'View-Customer', to:'/dashboard/view-Customer'}
+              ],
+              CM:[
+                 {lable :'varification-pending', to:'/dashboard/varification-pending'}
+               ]
+    
+
+              
     }
   
     return (
