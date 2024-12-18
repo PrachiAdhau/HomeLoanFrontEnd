@@ -7,9 +7,14 @@ import PendingEnquiry from '../modules/RM/PendingEnquiry';
 import AddEnquiry from '../modules/RM/AddEnquiry';
 import ViewEmployee from '../modules/employee/ViewEmployee';
 import AddEmployee from '../modules/employee/AddEmployee';
+
 import CustomerAddress from '../modules/OE/CustomerAddress';
 import Customer from '../modules/OE/Customer';
 import VarificationPending from '../modules/CM/VarificationPending';
+
+import EditEnquiry from '../modules/RM/EditEnquiry';
+
+
 function Dashboard() {
    let userJson = localStorage.getItem('user');
         const {usertype} =JSON.parse(userJson)
@@ -22,6 +27,7 @@ function Dashboard() {
               {path:'/view-approved',component:<ViewApprovedenq/>},
               {path:'/rejected-enquiry',component:<RejectedEnquiry/>},
               {path:'/pending-enquiry',component:<PendingEnquiry/>},
+
               {path:'/add-enquiry',component:<AddEnquiry/>}
 
             ],
@@ -33,6 +39,8 @@ function Dashboard() {
             {path:'/varification-pending',component:<VarificationPending/>}
         ]
           
+
+
         }
   return (
     <div>
