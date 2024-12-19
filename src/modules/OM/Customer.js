@@ -228,7 +228,7 @@ function Customer() {
           </div>
           <div className='mb-4'>
             <label className='form-label'>Enter customer loan status</label>
-            <input type='text' className='form-control border border-dark' {...register('loanStatus', { required: false })} value="pending"/>
+            <input type='text' className='form-control border border-dark' {...register('loanStatus', { required: false })} value="submit"/>
           </div>
 
           <div className='mb-4'>

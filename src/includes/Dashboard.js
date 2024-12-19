@@ -8,8 +8,9 @@ import AddEnquiry from '../modules/RM/AddEnquiry';
 import ViewEmployee from '../modules/employee/ViewEmployee';
 import AddEmployee from '../modules/employee/AddEmployee';
 
-import CustomerAddress from '../modules/OE/CustomerAddress';
-import Customer from '../modules/OE/Customer';
+import CustomerAddress from '../modules/OM/CustomerAddress';
+import Customer from '../modules/OM/Customer';
+
 import VarificationPending from '../modules/CM/VarificationPending';
 
 import EditEnquiry from '../modules/RM/EditEnquiry';
