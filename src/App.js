@@ -14,6 +14,8 @@ import Signin from './templates/Signin'
 import './style/Common.css';
 
 import Dashboard from './includes/Dashboard';
+import EditEnquiry from './modules/RM/EditEnquiry';
+
 
 function App() {
   return (
@@ -35,6 +37,7 @@ function App() {
         <Route path='emi' element={<EMICalculator/>}></Route>
 
         <Route path='/dashboard/*' element={<Dashboard/>}></Route>
+        <Route path="/edit/:applicant_Id" element={<EditEnquiry/>}></Route>
 
       </Routes>
       </BrowserRouter>
