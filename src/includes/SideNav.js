@@ -25,7 +25,10 @@ function SideNav() {
                 {lable :'View-Customer', to:'/dashboard/view-Customer'}
               ],
               CM:[
-                 {lable :'varification-pending', to:'/dashboard/varification-pending'}
+                 {lable :'varification-pending', to:'/dashboard/varification-pending'},
+                // {lable :'dashboard/single-customer/:customerID', to:'/dashboard/docvarify'}
+                {lable :'sanctiongenerate', to:'/dashboard/sanctiongenerate'},
+                
                ]
     
 

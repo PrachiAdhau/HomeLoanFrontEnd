@@ -13,7 +13,13 @@ import Customer from '../modules/OM/Customer';
 
 import VarificationPending from '../modules/CM/VarificationPending';
 
+import DocVarify from '../modules/CM/DocVarify';
+import SanctionGenerate from '../modules/CM/SanctionGenerate';
+import SanctionForm from '../modules/CM/SanctionForm';
+
+
 import EditEnquiry from '../modules/RM/EditEnquiry';
+
 
 
 function Dashboard() {
@@ -37,7 +43,11 @@ function Dashboard() {
               {path:'/view-Customer',component:<Customer/>}
           ],
           CM:[ 
-            {path:'/varification-pending',component:<VarificationPending/>}
+            {path:'/varification-pending',component:<VarificationPending/>},
+            {path:'/edit/:customerID', component:<DocVarify/>},
+            {path:'/getEditData/:customerID', component:<VarificationPending/>},
+            {path:'/sanctiongenerate',component:<SanctionGenerate/>},
+            {path:'/sanctionform/:customerID',component:<SanctionForm/>},
         ]
           
 
@@ -45,7 +55,8 @@ function Dashboard() {
         }
   return (
     <div>
- <div className='row w-100 mt-2 m-0'> 
+      
+       <div className='row w-100 mt-2 m-0'> 
              <div className='col col-3 bg-primary'> 
                 <SideNav/>
              </div>
