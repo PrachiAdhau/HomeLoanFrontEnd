@@ -93,4 +93,4 @@ function AddEnquiry() {
     )
 }
 
-export default AddEnquiry;
+export default AddEnquiry
