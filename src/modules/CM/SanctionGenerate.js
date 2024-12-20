@@ -2,12 +2,13 @@ import axios from "axios";
 import React, { useState,useEffect } from "react";
 
 import { Link } from "react-router-dom";
-function VarificationPending()
+
+function SanctionGenerate()
 {
     const [customer,setCustomer]=useState([]);
     
     const getData=()=>{
-        axios.get('http://localhost:9095/customer/getByCustomerLoanstatus/pending')
+        axios.get('http://localhost:9095/customer/getByCustomerLoanstatus/docverify')
         .then((res)=>setCustomer(res.data))
         
     }
@@ -47,11 +48,8 @@ function VarificationPending()
                         <td>{customer.customerAmountPaidForHome}</td> 
                         <td>{customer.customerTotalLoanRequired}</td> 
                         <td>{customer.loanStatus}</td> 
-                        <td><img src={'data:image/jpeg;base64,'+customer.allpersonalDocument.salarySlips}  
-                               width={100}></img></td>
-        
-                        <td> 
-                        <Link className="btn btn-outline-primary me-4" to={`/dashboard/edit/${customer.customerID}`}>Varify Documents</Link>
+                        <td>
+                        <Link className="btn btn-outline-primary me-4" to={`/dashboard/sanctionform/${customer.customerID}`}>Sanction Generate</Link>
                             </td>                                                    
                     </tr>)
                 }
@@ -61,4 +59,4 @@ function VarificationPending()
   
     )
 }
-export default VarificationPending;
+export default SanctionGenerate;

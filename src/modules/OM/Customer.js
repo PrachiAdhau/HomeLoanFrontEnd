@@ -183,7 +183,7 @@ function Customer() {
 
           <div className='mb-4'>
             <label className='form-label'>Enter Customer Name</label>
-            <input type='text' className='form-control border border-dark' {...register('customerName', { required: false })} value="Abc" />
+            <input type='text' className='form-control border border-dark' {...register('customerName', { required: false })}  />
           </div>
 
           <div className='mb-4'>
@@ -228,7 +228,7 @@ function Customer() {
           </div>
           <div className='mb-4'>
             <label className='form-label'>Enter customer loan status</label>
-            <input type='text' className='form-control border border-dark' {...register('loanStatus', { required: false })} value="submit"/>
+            <input type='text' className='form-control border border-dark' {...register('loanStatus', { required: false })} />
           </div>
 
           <div className='mb-4'>

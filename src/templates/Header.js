@@ -9,8 +9,6 @@ function Header() {
       <img src="https://seeklogo.com/images/H/home-loan-logo-47AE303918-seeklogo.com.png" height={'70px'} width={'100px'} >
       </img>
     <div className='w-40 ml-auto'>
-
-        <Link className='navlink'to={'/home'}>Home</Link> 
         <Link className='navlink' to={'/home'}>Home</Link> 
         <Link className='navlink'to={'/emicalculator'}>EmiCalculator</Link> 
         <Link className='navlink'to={'/enquiry'}>Enquiry</Link>

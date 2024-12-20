@@ -10,6 +10,10 @@ import AddEmployee from '../modules/employee/AddEmployee';
 import CustomerAddress from '../modules/OM/CustomerAddress';
 import Customer from '../modules/OM/Customer';
 import VarificationPending from '../modules/CM/VarificationPending';
+import DocVarify from '../modules/CM/DocVarify';
+import SanctionGenerate from '../modules/CM/SanctionGenerate';
+import SanctionForm from '../modules/CM/SanctionForm';
+
 function Dashboard() {
    let userJson = localStorage.getItem('user');
         const {usertype} =JSON.parse(userJson)
@@ -30,13 +34,18 @@ function Dashboard() {
               {path:'/view-Customer',component:<Customer/>}
           ],
           CM:[ 
-            {path:'/varification-pending',component:<VarificationPending/>}
+            {path:'/varification-pending',component:<VarificationPending/>},
+            {path:'/edit/:customerID', component:<DocVarify/>},
+            {path:'/getEditData/:customerID', component:<VarificationPending/>},
+            {path:'/sanctiongenerate',component:<SanctionGenerate/>},
+            {path:'/sanctionform/:customerID',component:<SanctionForm/>},
         ]
           
         }
   return (
     <div>
- <div className='row w-100 mt-2 m-0'> 
+      
+       <div className='row w-100 mt-2 m-0'> 
              <div className='col col-3 bg-primary'> 
                 <SideNav/>
              </div>
